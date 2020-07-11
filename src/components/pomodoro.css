@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css?family=Orbitron");
+
+body {
+  background-color:#6dd37c;
+  display: flex;
+  justify-content:center;
+ 
+}
+#inner-container {
+  height: 350px;
+  width: 50vw;
+   background-color:#8ce99a;
+  margin-top: 40px;
+  display:flex;
+  justify-content:center;
+   padding-top:20px; 
+}
+p{
+  font-family: Arial;
+}
+#title{
+  font-weight:700;
+  color: green;
+  font-size:25px;
+  text-align:center;
+}
+#top{
+  display:grid;
+  grid-template-columns: auto auto;
+  
+}
+
+#session-label{
+ margin-right: 120px;
+}
+
+#session-label,
+#break-label{
+  font-weight: 600;
+  color:green;
+}
+
+#break-increment,
+#break-decrement,
+#session-increment,
+#session-decrement
+{
+width:20px;
+  height:20px;
+  background-color:green;
+font-weight:800;
+  
+}
+
+.figure{
+ font-weight:700;
+   margin-top: 0px; 
+  color:#010c37;
+}
+.sign{
+  font-weight:800;
+  margin-top: -3px;
+  margin-left:-2px;
+  color:#010c37;
+}
+
+#control-1,#control-2 {
+  width:100px;
+  height:20px;
+  background-color:#8ce99a;
+  display:grid;
+  grid-template-columns: 50px 50px 50px;
+
+}
+#timer {
+ position:absolute;
+  top: 230px;
+  font-size: 25px;
+   text-align:center;
+  height:160px;
+  border:2px solid green;
+  border-radius:20px;
+}
+  
+#timer-label{
+color: green;
+  font-family: Arial;
+  font-weight:700;
+  padding-bottom:30px;
+}
+
+#time-left{
+  margin-bottom: -50px;
+   margin-left:10px;
+   margin-right:10px;
+  font-size:60px;
+  font-family: orbitron;
+  color: #010c37;
+  padding-bottom:70px;
+}
+#control-3{
+  position:absolute;
+ top: 420px;
+  height:30px;
+  margin-left:10px;
+}
+#reset:active{
+  transform: translateY(2px);
+}
+#start_stop:active{
+  transform: translateY(2px);
+}
+#start_stop,#reset{
+  background-color:green;
+  font-size:20px;
+  margin-right:10px;
+  color:#010c37;
+}
+.fa{
+  margin-left:5px;
+}
+
+
+@media screen and (max-width: 650px) {
+  #inner-container{
+    width: 400px;
+  }
+}
